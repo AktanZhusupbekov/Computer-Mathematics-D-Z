@@ -6,7 +6,7 @@ def fepsilon():
     while (np.float16(1.0) + D) > np.float16(1.0):
         D /= np.float16(2.0)
 
-    return delta * np.float16(2.0)
+    return D * np.float16(2.0)
 
-epsilon = f_epsilon()
+epsilon = fepsilon()
 print(f"Output: {epsilon}")
